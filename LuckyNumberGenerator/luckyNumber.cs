@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LuckyNumberGenerator
 {
-    public partial class Form1 : Form
+    public partial class luckyNumber : Form
     {
-        public Form1()
+        public luckyNumber()
         {
             InitializeComponent();
         }
