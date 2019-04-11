@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//this is my own work
+//Noah Vandervelden
+
 namespace LuckyNumberGenerator
 {
     public partial class LuckyNumberGenerator : Form
