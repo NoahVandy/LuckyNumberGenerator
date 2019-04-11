@@ -12,9 +12,15 @@ namespace LuckyNumberGenerator
 {
     public partial class luckyNumber : Form
     {
-        public luckyNumber()
+        public luckyNumber(int luckyNum)
         {
             InitializeComponent();
+            lbl_number.Text = "Lucky Number is " + luckyNum.ToString();
+        }
+
+        private void lbl_number_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -16,7 +16,7 @@ namespace LuckyNumberGenerator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new dataForm());
+            Application.Run(new LuckyNumberGenerator());
         }
     }
 }

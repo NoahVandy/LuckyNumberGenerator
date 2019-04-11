@@ -1,6 +1,6 @@
 ﻿namespace LuckyNumberGenerator
 {
-    partial class dataForm
+    partial class LuckyNumberGenerator
     {
         /// <summary>
         /// Required designer variable.

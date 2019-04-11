@@ -40,6 +40,7 @@
             this.lbl_number.Size = new System.Drawing.Size(714, 108);
             this.lbl_number.TabIndex = 0;
             this.lbl_number.Text = "Lucky Number: ";
+            this.lbl_number.Click += new System.EventHandler(this.lbl_number_Click);
             // 
             // luckyNumber
             // 

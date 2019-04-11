@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace LuckyNumberGenerator
 {
-    public partial class dataForm : Form
+    public partial class LuckyNumberGenerator : Form
     {
 
         //List<String> years = new List<String>();
@@ -22,7 +22,7 @@ namespace LuckyNumberGenerator
 
         String[] colors = { "Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet" };
 
-        public dataForm()
+        public LuckyNumberGenerator()
         {
             InitializeComponent();
 
@@ -71,8 +71,21 @@ namespace LuckyNumberGenerator
 
         private void btn_calculate_Click(object sender, EventArgs e)
         {
-            luckyNumber luckyNumberForm = new luckyNumber();
+            int year = cmbbx_year.SelectedIndex + 1;
+            int month = cmbbx_month.SelectedIndex + 1;
+            int day = cmbbx_date.SelectedIndex + 1;
+            int color = cmbbx_color.SelectedIndex + 1;
+
+            int luckyNum = (year + month + (day * color)) % 19;
+            luckyNumber luckyNumberForm = new luckyNumber(luckyNum);
             luckyNumberForm.ShowDialog();
+
+
         }
+
+
+
+        
     }
+
 }
